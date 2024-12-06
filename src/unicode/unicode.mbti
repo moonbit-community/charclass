@@ -1,0 +1,47 @@
+package myfreess/charclass/unicode
+
+// Values
+fn is_control(Char) -> Bool
+
+// Types and methods
+pub(readonly) enum GeneralCategory {
+  UppercaseLetter
+  LowercaseLetter
+  TitlecaseLetter
+  ModifierLetter
+  OtherLetter
+  NonSpacingMark
+  SpacingCombiningMark
+  EnclosingMark
+  DecimalNumber
+  LetterNumber
+  OtherNumber
+  ConnectorPunctuation
+  DashPunctuation
+  OpenPunctuation
+  ClosePunctuation
+  InitialQuote
+  FinalQuote
+  OtherPunctuation
+  MathSymbol
+  CurrencySymbol
+  ModifierSymbol
+  OtherSymbol
+  Space
+  LineSeparator
+  ParagraphSeparator
+  Control
+  Format
+  Surrogate
+  PrivateUse
+  NotAssigned
+}
+impl GeneralCategory {
+  of(Char) -> Self
+}
+impl Show for GeneralCategory
+
+// Type aliases
+
+// Traits
+
