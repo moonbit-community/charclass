@@ -1,12 +1,4 @@
 ///|
-pub fn is_control(this : Char) -> Bool {
-  match GeneralCategory::of(this) {
-    Control => true
-    _ => false
-  }
-}
-
-///|
 test "control character" {
   assert_true!(is_control('\u{00}'))
   assert_true!(is_control('\u{01}'))

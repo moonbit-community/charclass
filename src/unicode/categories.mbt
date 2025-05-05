@@ -33,7 +33,7 @@ pub enum GeneralCategory {
 } derive(Show)
 
 ///|
-fn GeneralCategory::from_int(b : Byte) -> GeneralCategory {
+fn GeneralCategory::from_byte(b : Byte) -> GeneralCategory {
   match b {
     0 => UppercaseLetter
     1 => LowercaseLetter
@@ -75,6 +75,6 @@ pub fn GeneralCategory::of(chr : Char) -> GeneralCategory {
   if n >= 1114110 {
     return NotAssigned
   } else {
-    return GeneralCategory::from_int(categories[n])
+    return GeneralCategory::from_byte(categories[n])
   }
 }

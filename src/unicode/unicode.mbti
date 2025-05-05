@@ -1,7 +1,23 @@
 package "myfreess/charclass/unicode"
 
 // Values
+fn is_alphabetic(Char) -> Bool
+
+fn is_alphanum(Char) -> Bool
+
 fn is_control(Char) -> Bool
+
+fn is_mark(Char) -> Bool
+
+fn is_number(Char) -> Bool
+
+fn is_puncutation(Char) -> Bool
+
+fn is_separator(Char) -> Bool
+
+fn is_space(Char) -> Bool
+
+fn is_symbol(Char) -> Bool
 
 // Types and methods
 pub enum GeneralCategory {
