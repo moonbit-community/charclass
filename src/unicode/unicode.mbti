@@ -1,10 +1,10 @@
-package myfreess/charclass/unicode
+package "myfreess/charclass/unicode"
 
 // Values
 fn is_control(Char) -> Bool
 
 // Types and methods
-pub(readonly) enum GeneralCategory {
+pub enum GeneralCategory {
   UppercaseLetter
   LowercaseLetter
   TitlecaseLetter
