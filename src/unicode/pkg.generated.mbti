@@ -1,3 +1,4 @@
+// Generated using `moon info`, DON'T EDIT IT
 package "myfreess/charclass/unicode"
 
 // Values
@@ -11,13 +12,17 @@ fn is_mark(Char) -> Bool
 
 fn is_number(Char) -> Bool
 
-fn is_puncutation(Char) -> Bool
+fn is_punctuation(Char) -> Bool
 
 fn is_separator(Char) -> Bool
 
 fn is_space(Char) -> Bool
 
 fn is_symbol(Char) -> Bool
+
+fn is_whitespace(Char) -> Bool
+
+// Errors
 
 // Types and methods
 pub enum GeneralCategory {
@@ -52,9 +57,7 @@ pub enum GeneralCategory {
   PrivateUse
   NotAssigned
 }
-impl GeneralCategory {
-  of(Char) -> Self
-}
+fn GeneralCategory::of(Char) -> Self
 impl Show for GeneralCategory
 
 // Type aliases
