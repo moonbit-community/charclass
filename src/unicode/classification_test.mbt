@@ -12,6 +12,7 @@ test "control character" {
 }
 
 // https://en.wikipedia.org/wiki/Whitespace_character
+
 ///|
 test "whitespace" {
   assert_true(@unicode.is_whitespace('\u{0009}')) // character tabulation

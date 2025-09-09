@@ -1,0 +1,66 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "myfreess/charclass/unicode"
+
+// Values
+fn is_alphabetic(Char) -> Bool
+
+fn is_alphanum(Char) -> Bool
+
+fn is_control(Char) -> Bool
+
+fn is_mark(Char) -> Bool
+
+fn is_number(Char) -> Bool
+
+fn is_punctuation(Char) -> Bool
+
+fn is_separator(Char) -> Bool
+
+fn is_space(Char) -> Bool
+
+fn is_symbol(Char) -> Bool
+
+fn is_whitespace(Char) -> Bool
+
+// Errors
+
+// Types and methods
+pub enum GeneralCategory {
+  UppercaseLetter
+  LowercaseLetter
+  TitlecaseLetter
+  ModifierLetter
+  OtherLetter
+  NonSpacingMark
+  SpacingCombiningMark
+  EnclosingMark
+  DecimalNumber
+  LetterNumber
+  OtherNumber
+  ConnectorPunctuation
+  DashPunctuation
+  OpenPunctuation
+  ClosePunctuation
+  InitialQuote
+  FinalQuote
+  OtherPunctuation
+  MathSymbol
+  CurrencySymbol
+  ModifierSymbol
+  OtherSymbol
+  Space
+  LineSeparator
+  ParagraphSeparator
+  Control
+  Format
+  Surrogate
+  PrivateUse
+  NotAssigned
+}
+fn GeneralCategory::of(Char) -> Self
+impl Show for GeneralCategory
+
+// Type aliases
+
+// Traits
+
