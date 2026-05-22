@@ -1,0 +1,2 @@
+// for 2.8MB bytes literal in bitmap.mbt
+warnings = "-33"
