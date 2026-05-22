@@ -30,7 +30,7 @@ pub enum GeneralCategory {
   Surrogate // Cs: Other, Surrogate
   PrivateUse // Co: Other, Private Use
   NotAssigned // Cn: Other, Not Assigned
-} derive(Show)
+} derive(Debug)
 
 ///|
 fn GeneralCategory::from_byte(b : Byte) -> GeneralCategory {
