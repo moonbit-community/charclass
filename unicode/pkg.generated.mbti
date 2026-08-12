@@ -66,4 +66,3 @@ pub fn GeneralCategory::of(Char) -> Self
 // Type aliases
 
 // Traits
-

@@ -1,0 +1,19 @@
+name = "moonbit-community/charclass"
+
+version = "0.1.3"
+
+readme = "README.md"
+
+repository = "https://github.com/moonbit-community/charclass"
+
+license = "Apache-2.0"
+
+keywords = [
+  "unicode",
+  "character",
+  "classification",
+  "text-processing",
+  "character-classes",
+]
+
+description = "Unicode character classification library providing functions to determine character properties such as alphabetic, numeric, whitespace, punctuation, and other Unicode general categories"
