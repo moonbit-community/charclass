@@ -33,48 +33,44 @@ pub enum GeneralCategory {
 } derive(Debug)
 
 ///|
-fn GeneralCategory::from_byte(b : Byte) -> GeneralCategory {
-  match b {
-    0 => UppercaseLetter
-    1 => LowercaseLetter
-    2 => TitlecaseLetter
-    3 => ModifierLetter
-    4 => OtherLetter
-    5 => NonSpacingMark
-    6 => SpacingCombiningMark
-    7 => EnclosingMark
-    8 => DecimalNumber
-    9 => LetterNumber
-    10 => OtherNumber
-    11 => ConnectorPunctuation
-    12 => DashPunctuation
-    13 => OpenPunctuation
-    14 => ClosePunctuation
-    15 => InitialQuote
-    16 => FinalQuote
-    17 => OtherPunctuation
-    18 => MathSymbol
-    19 => CurrencySymbol
-    20 => ModifierSymbol
-    21 => OtherSymbol
-    22 => Space
-    23 => LineSeparator
-    24 => ParagraphSeparator
-    25 => Control
-    26 => Format
-    27 => Surrogate
-    28 => PrivateUse
-    29 => NotAssigned
-    _ => panic()
+fn GeneralCategory::from_ucd(
+  category : @ucd.GeneralCategory,
+) -> GeneralCategory {
+  match category {
+    Lu => UppercaseLetter
+    Ll => LowercaseLetter
+    Lt => TitlecaseLetter
+    Lm => ModifierLetter
+    Lo => OtherLetter
+    Mn => NonSpacingMark
+    Mc => SpacingCombiningMark
+    Me => EnclosingMark
+    Nd => DecimalNumber
+    Nl => LetterNumber
+    No => OtherNumber
+    Pc => ConnectorPunctuation
+    Pd => DashPunctuation
+    Ps => OpenPunctuation
+    Pe => ClosePunctuation
+    Pi => InitialQuote
+    Pf => FinalQuote
+    Po => OtherPunctuation
+    Sm => MathSymbol
+    Sc => CurrencySymbol
+    Sk => ModifierSymbol
+    So => OtherSymbol
+    Zs => Space
+    Zl => LineSeparator
+    Zp => ParagraphSeparator
+    Cc => Control
+    Cf => Format
+    Cs => Surrogate
+    Co => PrivateUse
+    Cn => NotAssigned
   }
 }
 
 ///|
 pub fn GeneralCategory::of(chr : Char) -> GeneralCategory {
-  let n = chr.to_int()
-  if n >= 1114110 {
-    return NotAssigned
-  } else {
-    return GeneralCategory::from_byte(categories[n])
-  }
+  GeneralCategory::from_ucd(@ucd.general_category(chr))
 }
