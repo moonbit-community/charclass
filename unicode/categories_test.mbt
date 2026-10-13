@@ -58,7 +58,7 @@ test "general category mapping" {
   debug_inspect(@unicode.GeneralCategory::of('\u{0000}'), content="Control")
   debug_inspect(@unicode.GeneralCategory::of('\u{200D}'), content="Format")
   debug_inspect(
-    @unicode.GeneralCategory::of((0xD800 : Int).unsafe_to_char()),
+    @unicode.GeneralCategory::of((0xD800 : Int32).unsafe_to_char()),
     content="Surrogate",
   )
   debug_inspect(@unicode.GeneralCategory::of('\u{E000}'), content="PrivateUse")
