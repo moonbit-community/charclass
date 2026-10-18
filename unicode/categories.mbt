@@ -33,6 +33,9 @@ pub enum GeneralCategory {
 } derive(Debug)
 
 ///|
+pub extend GeneralCategory with @moonbitlang/core/debug.Debug::{to_repr}
+
+///|
 fn GeneralCategory::from_ucd(
   category : @ucd.GeneralCategory,
 ) -> GeneralCategory {
