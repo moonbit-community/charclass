@@ -62,7 +62,6 @@ pub enum GeneralCategory {
   NotAssigned
 } derive(@debug.Debug)
 pub fn GeneralCategory::of(Char) -> Self
-pub fn GeneralCategory::to_repr(Self) -> @debug.Repr
 
 // Type aliases
 

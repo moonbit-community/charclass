@@ -33,6 +33,8 @@ pub enum GeneralCategory {
 } derive(Debug)
 
 ///|
+#deprecated
+#doc(hidden)
 pub extend GeneralCategory with @moonbitlang/core/debug.Debug::{to_repr}
 
 ///|
