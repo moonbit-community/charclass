@@ -1,4 +1,5 @@
 ///|
+#derive(Debug)
 pub enum GeneralCategory {
   UppercaseLetter // Lu: Letter, Uppercase
   LowercaseLetter // Ll: Letter, Lowercase
@@ -30,7 +31,7 @@ pub enum GeneralCategory {
   Surrogate // Cs: Other, Surrogate
   PrivateUse // Co: Other, Private Use
   NotAssigned // Cn: Other, Not Assigned
-} derive(Debug)
+}
 
 ///|
 #deprecated

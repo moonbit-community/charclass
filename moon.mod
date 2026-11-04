@@ -19,5 +19,5 @@ keywords = [
 description = "Unicode character classification library providing functions to determine character properties such as alphabetic, numeric, whitespace, punctuation, and other Unicode general categories"
 
 import {
-  "moonbit-community/ucd@0.5.0",
+  "moonbit-community/unicode-data@0.7.0",
 }

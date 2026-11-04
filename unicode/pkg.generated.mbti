@@ -29,6 +29,7 @@ pub fn is_whitespace(Char) -> Bool
 // Errors
 
 // Types and methods
+#derive(@debug.Debug)
 pub enum GeneralCategory {
   UppercaseLetter
   LowercaseLetter
@@ -60,7 +61,7 @@ pub enum GeneralCategory {
   Surrogate
   PrivateUse
   NotAssigned
-} derive(@debug.Debug)
+}
 pub fn GeneralCategory::of(Char) -> Self
 
 // Type aliases

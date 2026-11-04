@@ -1,4 +1,4 @@
 import {
-  "moonbit-community/ucd",
+  "moonbit-community/unicode-data" @ucd,
   "moonbitlang/core/debug",
 }
